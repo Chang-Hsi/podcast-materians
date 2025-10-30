@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* 只影響 Paginator，自訂為「黑色圓形」樣式 */
+.p-paginator {
+  /* 文字與一般狀態 */
+  --p-paginator-nav-button-background: transparent;
+  --p-paginator-nav-button-color: #334155;                  /* slate-600 */
+
+  /* hover 狀態 */
+  --p-paginator-nav-button-hover-background: rgba(0,0,0,.06);
+  --p-paginator-nav-button-hover-color: #0f172a;            /* slate-900 */
+
+  /* 當前頁（重點）：黑底白字 */
+  --p-paginator-nav-button-selected-background: var(--p-primary-900);
+  --p-paginator-nav-button-selected-color: #fff;
+
+  /* 圓形與尺寸（不同版本若無作用就保留下面的備援規則） */
+  --p-paginator-nav-button-border-radius: 9999px;
+  --p-paginator-nav-button-width: 2.25rem;
+  --p-paginator-nav-button-height: 2.25rem;
+
+  /* rows-per-page 下拉 */
+  --p-paginator-rpp-dropdown-background: #fff;
+  --p-paginator-rpp-dropdown-color: #0f172a;
+  --p-paginator-rpp-dropdown-border-radius: 0.75rem;
+}
+
+/* 備援：如果某些 token 在你的版本沒有吃到，就用這段兜底 */
+.p-paginator .p-paginator-page,
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 9999px;
+}
+
+.p-paginator .p-paginator-page.p-highlight {
+  background: var(--p-primary-900) !important;
+  color: #fff !important;
+}
