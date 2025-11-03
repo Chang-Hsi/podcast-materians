@@ -42,3 +42,8 @@
   background: var(--p-primary-900) !important;
   color: #fff !important;
 }
+
+/* 全站預設文字色＝Prime 主題 */
+@layer base {
+  body { color: var(--p-primary-900); }
+}
