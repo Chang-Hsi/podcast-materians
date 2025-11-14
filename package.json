@@ -16,6 +16,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "animate.css": "^4.1.1",
     "axios": "^1.13.1",
+    "fabric": "^6.9.0",
     "pinia": "^3.0.3",
     "primeicons": "^7.0.0",
     "primevue": "^4.4.1",

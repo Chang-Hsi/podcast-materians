@@ -10,6 +10,7 @@ import Contact from '@/views/Contact.vue'
 import Blog from '@/views/Blog.vue'
 import Gallery from '@/views/Gallery.vue'
 import OurTeam from '@/views/OurTeam.vue'
+import Canvas from '@/views/Canvas.vue'
 import Faq from '@/views/Faq.vue'
 import NotFound from '@/views/NotFound.vue'
 
@@ -24,6 +25,7 @@ const router = createRouter({
     { path: '/blog', name: 'blog', component: Blog },
     { path: '/gallery', name: 'gallery', component: Gallery },
     { path: '/our-team', name: 'our-team', component: OurTeam },
+    { path: '/canvas', name: 'canvas', component: Canvas },
     { path: '/faq', name: 'faq', component: Faq },
     { path: '/contact', name: 'contact', component: Contact },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound }

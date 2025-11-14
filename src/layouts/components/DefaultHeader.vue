@@ -127,6 +127,14 @@ const pagesItems = [
     },
   },
   {
+    label: "Canvas",
+    icon: "pi pi-images",
+    command: () => {
+      router.push("/canvas");
+      pagesMenu.value?.hide();
+    },
+  },
+  {
     label: "FAQ",
     icon: "pi pi-question-circle",
     command: () => {
